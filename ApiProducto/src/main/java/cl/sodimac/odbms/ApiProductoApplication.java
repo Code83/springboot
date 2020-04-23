@@ -27,11 +27,11 @@ public class ApiProductoApplication implements CommandLineRunner{
 	public void run(String... arg0) throws Exception {
         datasource.getConnection();
         System.out.println("HOLA MUNDO SPRING BOOT");
-        System.out.println("DATASOURCE = " + datasource);
-        System.out.println("\n1.findAll()...");
-        for (Prdmstee ptemp : proveedorRepository.findAll()) {
-            System.out.println(ptemp);
-        }
+    //    System.out.println("DATASOURCE = " + datasource);
+    //    System.out.println("\n1.findAll()...");
+    //    for (Prdmstee ptemp : proveedorRepository.findAll()) {
+    //        System.out.println(ptemp);
+    //    }
        
        
     }

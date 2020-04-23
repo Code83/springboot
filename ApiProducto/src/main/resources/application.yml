@@ -1,0 +1,21 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: dev
+
+# DataSource
+  datasource:
+        hikari:
+            connection-test-query: SELECT 1 FROM DUAL
+            minimum-idle: 1
+            maximum-pool-size: 5
+            pool-name: OracleTest
+            auto-commit: true
+        driver-class-name: oracle.jdbc.OracleDriver
+        url: jdbc:oracle:thin:@cosmos.falabella.cl:1531:dssod1
+        username: odsds
+        password: snoopy
+        type: com.zaxxer.hikari.HikariDataSource
+
+
+
